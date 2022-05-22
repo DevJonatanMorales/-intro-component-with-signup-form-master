@@ -1,42 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  Learn to code by watching others
+    <title>Frontend Mentor | Intro component with sign up form</title>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <h1 class="main__title">Learn to code by watching others</h1>
+        <p class="main__paragraph">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </main>
+      <form class="from" action="#" method="post">
+        <label class="from__label" for="#"
+          >Try it free 7 days then $20/mo. thereafter</label
+        >
+        <div class="control">
+          <div class="gruop__control">
+            <input type="text" class="txt" id="FirstName" />
+            <img
+              src="./assets/images/icon-error.svg"
+              alt="icon error"
+              class="icon__error"
+            />
+            <p class="aler">First Name cannot be empty</p>
+          </div>
 
-  Try it free 7 days then $20/mo. thereafter
+          <div class="gruop__control">
+            <input type="text" class="txt" id="LasttName" />
+            <img
+              src="./assets/images/icon-error.svg"
+              alt="icon error"
+              class="icon__error"
+            />
+            <p class="aler">Last Name cannot be empty</p>
+          </div>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+          <div class="gruop__control">
+            <input type="email" class="txt" id="Email" />
+            <img
+              src="./assets/images/icon-error.svg"
+              alt="icon error"
+              class="icon__error"
+            />
+            <p class="aler">Looks like this is not an email</p>
+          </div>
 
-  Claim your free trial 
+          <div class="gruop__control">
+            <input type="password" class="txt" id="Pass" />
+            <img
+              src="./assets/images/icon-error.svg"
+              alt="icon error"
+              class="icon__error"
+            />
+            <p class="aler">Password cannot be empty</p>
+          </div>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+          <button class="control__btn" type="submit">
+            Claim your free trial
+          </button>
+
+          <p class="control__paragraph">
+            By clicking the button, you are agreeing to our
+            <a class="control__link" href="#"> Terms and Services </a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <footer class="attribution">
+      <p class="attribution__paragraph">
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a class="attribution__link" href="#" target="_blank">Your Name Here</a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>

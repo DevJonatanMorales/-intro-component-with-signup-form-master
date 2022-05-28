@@ -34,49 +34,56 @@
           invaluable.
         </p>
       </main>
-      <form class="from" action="#" method="post">
-        <label class="from__label" for="#"
-          >Try it free 7 days then $20/mo. thereafter</label
+      <form class="from" action="#" method="post" id="from" autocomplete="off">
+        <label class="from__label" for="#">
+          <span class="from__label-bold"> Try it free 7 days </span>
+          then $20/mo. thereafter</label
         >
         <div class="control">
           <div class="gruop__control">
-            <input type="text" class="txt" id="FirstName" />
+            <input type="text" class="txt" id="first" />
             <img
               src="./assets/images/icon-error.svg"
               alt="icon error"
               class="icon__error"
+              id="icon__first__error"
             />
-            <p class="aler">First Name cannot be empty</p>
+            <p class="alert" id="alert__first">First Name cannot be empty</p>
           </div>
 
           <div class="gruop__control">
-            <input type="text" class="txt" id="LasttName" />
+            <input type="text" class="txt" id="last" />
             <img
               src="./assets/images/icon-error.svg"
               alt="icon error"
               class="icon__error"
+              id="icon__last__error"
             />
-            <p class="aler">Last Name cannot be empty</p>
+            <p class="alert" id="alert__last">Last Name cannot be empty</p>
           </div>
 
           <div class="gruop__control">
-            <input type="email" class="txt" id="Email" />
+            <input type="email" class="txt" id="email" />
             <img
               src="./assets/images/icon-error.svg"
               alt="icon error"
               class="icon__error"
+              id="icon__email__error"
             />
-            <p class="aler">Looks like this is not an email</p>
+            <p class="alert" id="alert__email">
+              Looks like this is not an email
+            </p>
           </div>
 
           <div class="gruop__control">
-            <input type="password" class="txt" id="Pass" />
+            <input type="password" class="txt" id="pass" />
             <img
               src="./assets/images/icon-error.svg"
               alt="icon error"
               class="icon__error"
+              id="icon__pass__error"
             />
-            <p class="aler">Password cannot be empty</p>
+            <p class="alert" id="alert__pass">Password cannot be empty</p>
           </div>
 
           <button class="control__btn" type="submit">
@@ -104,5 +111,8 @@
         >.
       </p>
     </footer>
+
+    <script src="./js/sweetalert2.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
